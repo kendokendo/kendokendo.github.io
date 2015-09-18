@@ -1,0 +1,40 @@
+body{
+  font-family: sans-serif;
+}
+
+h1
+{
+  color: blue;
+}
+
+#contact
+{
+  font-weight: bold;
+}
+
+#picture
+{
+  width: 45%;
+}
+
+h2
+{
+  color: purple;
+  margin-top: 4%;
+  text-align: center;
+  background-color: gray;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+h3
+{
+  font-weight: bold;
+  text-align: center;
+}
+
+#now
+{
+  color: green;
+  font-size: x-small;
+}

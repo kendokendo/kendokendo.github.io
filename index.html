@@ -1,73 +1,113 @@
-Hello World
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>EECS1012 CV</title>
+    <script type="text/javascript" src="CV.js"></script>
+    <link rel="stylesheet" href="CV.css" charset="utf-8"/>
+  </head>
+  <body onload="start();">
 
-<head>
-<style>
-body{ 
-    background-image: url("bannertest.png");
-    background-repeat: repeat-x;
-    
-}
-#header {
-    
-    color:black;
-    text-align:center;
-    padding:5px;
-}
-#example1 {
-    background-image: url("http://www.electrictoolbox.com/images/rangitoto-500x33.jpg")
-    background-repeat: no-repeat;
-}
-#nav {
-    line-height:30px;
-    background-colohr:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px;	      
-}
-#section {
-    width:350px;
-    float:left;
-    padding:10px;	 	 
-}
-#footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-   padding:5px;	 	 
-}
-</style>
-</head>
-<div id="example1"></div>
-<div id="header">
-<body>
+      <table width="100%" cellspacing="2">
+        <tbody>
+          <tr>
+            <td>
+              <h1>
+                Kenneth Faria
+              </h1>
+              <div class="address">
+                547 Kelvedon Mews, Mississauga, Ontario, L4Z 1G3
+                <p id="contact">
+                  Tel. (905) 867-7886,
+                  <br/> Email: kfaria@my.yorku.ca
+                </p>
+              </div>
+            </td>
+            <td align="right">
+              <img src="Ken.jpg" id="picture" onclick="swap();"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <span id="now">hi</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
 
-<h1>Kenneth Faria</h1>
-</div>
+      <h2>Objective</h2>
+      <span class="tex">
+        Seeking to expand programming knowledge through entry level position and side
+        projects.
+      </span>
 
-<div id="nav">
-Page 1<br>
-Page 2<br>
-Page 3<br>
-</div>
+      <h2>Experience</h2>
+      <ol>
+        <li>
+          Research Equipment Designer, Idea-Lab Lassonde School of Enginering, Toronto, Ont. (Current)
+          <br/>
+          <p>
+            Designed equibiaxial test machine that applied a uniform load along the
+            circumference of an elastomer sample in order to put it under pure uniaxial
+            strain. Currently in the manufacturing stage of project.
+          </p>
+        </li>
 
-<div id="section">
-<h2>Hello There!</h2>
-<p>
-My name is Kenneth Faria.  I am in my first year of Computer Science at the Lassonde School of Engineering within York University.  Over the next little while, I will try my best to update this space with project both completed and in progress.  If you have any question, feel free to contact me at kfaria<at>yorku.ca.<br><br>
+        <li>Technologies & Machine Design Group Intern, Hatch Ltd., Oakville, Ont. (May - August 2014)
+          <p>
+            Designed and performed a series of test procedures to gather data
+            for a feasibility study to be performed on the implementation of a robotic
+            cell installation in the smelting industry.  Was in charged of every aspect
+            of the mechanical design portion of the project, including design, prototyping
+            and experimentation.
+          </p>
+        </li>
 
-Stay afloat!<br><br>
+        <li>Junior Technician Intern, Sheridan College Applied Research and Innovation, Brampton, Ont. (April 2011 - Apr 2014)
+          <p>
+            Aided in various industry partered design projects invovling clean-sheet designing,
+            product prototyping, and reverse engineering.
+          </p>
+        </li>
+      </ol>
 
-Ken
-</p>
-<p>
+      <h2>Education</h2>
 
-</p>
-</div>
+      <table border="1" style="width:100%">
+        <tr>
+          <td><h3>Date</h3></td>
+          <td><h3>Degree</h3></td>
+          <td><h3>Institution</h3></td>
+          <td><h3>Notes</h3></td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td>High School Diploma</td>
+          <td>Philip Pocock CSS</td>
+          <td>Mississauga</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>Adv. Diploma in Mechanical Engineering Technology</td>
+          <td>Sheridan College</td>
+          <td>Brampton</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>BSc. Computer Science</td>
+          <td>York University</td>
+          <td>Toronto</td>
+        </tr>
+      </table>
 
-<div id="footer">
-Copyright © W3Schools.com
-</div>
+      <h2>Skills &amp Hobbies</h2>
+      <ul>
+        <li>Mechanical Designer</li>
+        <li>Working on cars</li>
+        <li>Longboarding</li>
+        <li>Eating Shwarmas</li>
+
+
+
+  </body>
+</html>
