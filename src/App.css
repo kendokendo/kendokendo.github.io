@@ -10,7 +10,6 @@ a:visited{
 
 .App {
   text-align: center;
-
 }
 
 .Page-Header {
@@ -20,35 +19,30 @@ a:visited{
   top: 0;
   position: fixed;
   font-family: Oswald;
-  /*font-size: 10em;*/
   font-size: 10vw;
   max-width: 100%;
   margin-top: -15px;
-  /*margin-left: 20%;*/
+  margin-left: 15vw;
+  margin-right: 15vw;
   /*margin-right: auto;*/
   font-weight: bold;
   letter-spacing: 5px;
-  /*text-align: center;*/
+  text-align: center;
 }
 
 .Page-Header #name {
   background-color: transparent;
   color: white;
-  margin: 0 auto;
-  
   z-index: 100;
   top: 0;
-  position: fixed;
+  /*position: fixed;*/
   font-family: Oswald;
   /*font-size: 10em;*/
   font-size: 10vw;
+  text-align: center
 }
 
 .Page-Header .sub{
-  margin-top: 20.5em;
-  /*margin-left: 25%;*/
-  
-  margin-bottom: auto;
 }
 
 .sub #projects {
@@ -66,8 +60,6 @@ a:visited{
 
     border-left:1px solid #38546d; 
     border-right:1px solid #16222c; 
-    
-     
      /*position:absolute;*/
      /*right:249px;
      top:10px; */
@@ -80,9 +72,6 @@ a:visited{
   color: #FFE1A8;
     /*font-size: 3em;*/
     font-size: 4vw;
-    
-    
-  
 }
 
 .Home-Slide #bar {

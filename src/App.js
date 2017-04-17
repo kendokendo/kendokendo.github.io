@@ -35,16 +35,14 @@ class App extends Component {
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Julius+Sans+One" />
         
-          <div className="Page-Header">
-            <a onClick={this.scrollToTop}><div id="name">KENNETH FARIA</div></a>
-              <div className="sub">
-                <a onClick={this.scrollToProjects}><span id="projects">PROJECTS</span></a>
-                <span id="divider"></span>
-                <a><span id="travel">TRAVEL</span></a>
-              </div>
-          </div>
-
-        
+        <div className="Page-Header">
+          <a onClick={this.scrollToTop}><div id="name">KENNETH FARIA</div></a>
+            <div className="sub">
+              <a onClick={this.scrollToProjects}><span id="projects">PROJECTS</span></a>
+              <span id="divider"></span>
+              <a><span id="travel">TRAVEL</span></a>
+            </div>
+        </div>
         <div className="Home-Slide" to="Home">
           <img src={homeSlide} className="home" alt=""/>
             <div id="bar"></div>
