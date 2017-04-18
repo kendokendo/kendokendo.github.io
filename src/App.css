@@ -30,7 +30,6 @@ a:visited{
   top: 0;
   font-family: Oswald;
   font-weight: bold;
-  letter-spacing: 5px; 
   font-size: 10vw;
   text-align: center;  
   position: fixed;  
@@ -38,9 +37,12 @@ a:visited{
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: .5%;
+  text-shadow: 0 0 15px rgba(0,0,0,.5);
+  
 }
 
 .Page-Header #name {
+  letter-spacing: 5px;   
   background-color: transparent;
   color: white;
   z-index: 100;
@@ -48,30 +50,32 @@ a:visited{
   font-family: Oswald;
   font-size: 10vw;
   font-size: 6vw;
-  
 }
 
 .Page-Header .sub{
+  font-weight: 100;  
+  z-index: 100;
 }
 
 .sub #projects {
   font-family: 'Julius Sans One', sans-serif;
   color: #8EFFC2;
-    /*font-size: 3em;*/
-    font-size: 3vw;
+  font-size: 2vw;
+  text-shadow: 1px 1px 1px rgba(167 ,255, 208,1);
 }
-
-/*.sub #divider {
-    border-left:1px solid white; 
-    border-right:1px solid white; 
-    margin-right: 5px;
-}*/
+.sub #projects:hover{
+  font-size: 5vh;
+}
 
  .sub #travel {
   font-family: 'Julius Sans One', sans-serif;
   color: #FFE1A8;
-  /*font-size: 3em;*/
-  font-size: 3vw;
+  font-size: 2vw;
+  text-shadow: 1px 1px 1px rgba(255, 255, 168,1); 
+}
+
+.sub #travel:hover {
+  font-size: 5vh;
 }
 
 .Home-Slide {
@@ -95,14 +99,11 @@ a:visited{
   top: 25%;
   left: 50%;
   transform: translate(-50%, 0);
-  /*border:1px solid gray;*/
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-radius: 5px;
-  z-index: 11;
+  z-index: 10;
 }
-.Home-Slide .about-border:hover{
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+
 
 
 .Home-Slide > .about {
@@ -122,16 +123,54 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
-.Home-Slide .about #content {
+.Home-Slide .about .content {
   box-sizing: border-box;
   position: relative;
   height: 100%;
   width: 100%;
 }
 
+.Home-Slide .about-border #about-me{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+  
+}
+
+.Home-Slide .about-border #displayPic {
+  position: relative;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  height: 80%;
+  width: 35%;
+  z-index: 15;
+  border-radius: 50%;
+  box-shadow: 0px 0px 14px rgba(0,0,0,0.25),
+              0px 1px 14px rgba(0,0,0,0.25),
+              0px 0px 14px rgba(0,0,0,0.25);
+}
+.Home-Slide .about-border #about-me p{
+  position: relative;  
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.8vw;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0 0 25px rgba(0,0,0,.5);
+  margin-top: 7.5%;
+  
+}
+
 .Project-Slide {
   position: relative;
-  z-index: 100;
+  z-index: 0;
 }
 
 .Project-Slide #bar {
@@ -145,16 +184,99 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 .Project-Slide .content {
   position: absolute;
-  width: 60%;
+  overflow: auto;
+  width: 45%;
   height: 100%;
-  z-index: 1;
-  filter: blur(1px);
-  /*background-color: rgba(87, 95 , 95, 0.55);*/
-  background-color: white;
-  opacity: .7;
+  z-index: 10;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.Project-Slide .content .coil-winder {
+  margin-top: 27.5%;
+  z-index: 9;  
+  height: 25%;
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.8vw;
+}
+
+.Project-Slide .content .coil-winder #coil-winder-pic {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+
+.Project-Slide .content .coil-winder #coil-winder-expl {
+  height: 100%;
+  width: 70%;
+  float: right;
+}
+
+.Project-Slide .content .sports-bra{
+  z-index: 9;  
+  height: 25%; 
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.8vw; 
+}
+
+.Project-Slide .content .sports-bra #sports-bra-pic {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+
+.Project-Slide .content .sports-bra #sports-bra-expl {
+  height: 100%;
+  width: 70%;
+  float: right;
+}
+.Project-Slide .content .pcb-design{
+  z-index: 19;  
+  height: 25%;
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.8vw;
+}
+
+.Project-Slide .content .pcb-design #pcb-design-pic {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+
+.Project-Slide .content .pcb-design #pcb-design-expl {
+  height: 100%;
+  width: 70%;
+  float: right;
+}
+.Project-Slide .content .sr1{
+  z-index: 9;  
+  height: 25%;
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1vw;
+  line-height: 1.8vw;
+}
+.Project-Slide .content .sr1 #sr1-pic {
+  height: 100%;
+  width: 30%;
+  float: left;
+}
+
+.Project-Slide .content .sr1 #sr1-expl {
+  height: 100%;
+  width: 70%;
+  float: right;
 }
 
 @keyframes App-logo-spin {
