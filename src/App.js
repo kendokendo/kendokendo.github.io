@@ -38,7 +38,7 @@ class App extends Component {
         <div className="Page-Header">
           <a onClick={this.scrollToTop}><div id="name">KENNETH FARIA</div></a>
             <div className="sub">
-              <a onClick={this.scrollToProjects}><span id="projects">PROJECTS</span></a>
+              <a onClick={this.scrollToProjects}><span id="projects">PROJECTS </span></a>
               <span id="divider"></span>
               <a><span id="travel">TRAVEL</span></a>
             </div>
@@ -46,12 +46,17 @@ class App extends Component {
         <div className="Home-Slide" to="Home">
           <img src={homeSlide} className="home" alt=""/>
             <div id="bar"></div>
+            <div className="about">
+              <div id="content"></div>
+            </div>
+            <div className="about-border"></div>
         </div>
         
         <Element name="projectScroll">  
           <div className="Project-Slide">
             <img src={projectSlide} className="projects" alt=""/>
               <div id="bar"></div>  
+              <div className="content"></div>
           </div>
         </Element>
 
