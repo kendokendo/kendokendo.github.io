@@ -1,0 +1,23 @@
+https://www.instagram.com/oauth/authorize/?client_id=3045cae1752e46ebb6592e130ebfec81&redirect_uri=https://localhost:3000&response_type=code
+
+localhost:3000?code=131e907d84974074937b9e47eeb41258
+
+curl -F 'client_id=3045cae1752e46ebb6592e130ebfec81' \
+    -F 'client_secret=612439f3e00a4d0abd192dc6ae1ea375' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=localhost:3000' \
+    -F 'code=131e907d84974074937b9e47eeb41258' \
+    https://api.instagram.com/oauth/access_token
+
+    {"access_token": "35929661.3045cae.cd68673f17e74f73bcb94c570c9ea7f3", 
+    "user": {"id": "35929661", 
+    "username": "kendokendokendokendo", "profile_picture": 
+    "https://scontent.cdninstagram.com/t51.2885-19/s150x150/17663358_451454495201937_1060432098306818048_a.jpg", 
+    "full_name": "Ken Faria", "bio": "", "website": ""}}
+
+  example pulls
+  https://api.instagram.com/v1/users/35929661/media/recent/?access_token=35929661.3045cae.cd68673f17e74f73bcb94c570c9ea7f3
+
+  https://api.instagram.com/v1/users/self/?access_token=35929661.3045cae.cd68673f17e74f73bcb94c570c9ea7f3
+  https://api.instagram.com/v1/users/self/media/recent/?access_token=35929661.3045cae.cd68673f17e74f73bcb94c570c9ea7f3&count=10
+  

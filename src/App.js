@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
+import IGFeed from './IGFeed';
 import homeSlide from './homeSlide.png';
 import projectSlide from './projectSlide.jpg';
 import ken from './ken-urban.JPG';
@@ -80,9 +81,9 @@ class App extends Component {
             <img src={projectSlide} className="projects" alt=""/>
               <div id="bar"></div>  
               <div className="content">
-
                 <div className="coil-winder">
                   <span><div id="coil-winder-pic">
+                    <IGFeed />
                   </div></span>
                   <span><div id="coil-winder-expl">
                   </div></span>
